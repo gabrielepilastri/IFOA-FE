@@ -1,0 +1,59 @@
+body {
+  font-size: 1.2em;
+}
+
+figure {
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#sottotitolo {
+  color: rgb(16, 88, 88);
+  background-color: rgb(253, 251, 241);
+  line-height: 200%;
+  text-align: center;
+  font-size: large;
+  border-top: 2px solid yellow;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wow {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 30em;
+}
+
+.grigia {
+  color: gray;
+}
+
+#rosso {
+  color: red;
+}
+
+#link {
+  border-left: 2px solid yellow;
+  width: 40%;
+  margin: 0 auto;
+  padding-left: 1em;
+}
+
+.titolo {
+  padding-left: 20em;
+}
+
+.lista {
+  border-top: 2px solid blue;
+  width: 40%;
+  margin: 0 auto;
+  font-size: larger;
+}
+
+a {
+  color: rgb(91, 91, 199);
+}
