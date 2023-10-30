@@ -1,115 +1,120 @@
 /* Your styles here */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800&family=Roboto+Flex:opsz@8..144&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;0,800;1,400&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800&family=Roboto+Flex:opsz@8..144&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800&family=Roboto+Flex:opsz@8..144&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;0,800;1,400&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800&family=Roboto+Flex:opsz@8..144&display=swap");
 
-html, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    color: #393d41;
-    
-    line-height: 1.65;
-    font-family: "open sans",sans-serif;
-    font-size: larger;
+body {
+  color: #393d41;
+
+  line-height: 1.65;
+  font-family: "open sans", sans-serif;
+  font-size: larger;
 }
 
-p{
-    font-weight: 500;
+p {
+  font-weight: 500;
 }
 
-header{
-    background-color: black;
-    padding: 1.5%;
+header {
+  background-color: black;
+  padding: 1.5%;
 }
 
-main{
-    text-align: center;
+#main {
+  text-align: center;
 }
 
-h1,h3,h4,h5{
-    color: #25a2c3;
+h1,
+h3,
+h4,
+h5 {
+  color: #25a2c3;
 }
 
-h1,h2,h3,h4,h5,h6{
-    line-height: 1.5;
-    font-family: "montserrat", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  font-family: "montserrat", sans-serif;
 }
 
-button{
-    background-color: #f04c2f;
-    font-family: "open sans";
-    font-size: large;
-    color: white;
-    padding: 1% 2%;
-    border-radius: 10%;
+button {
+  background-color: #f04c2f;
+  font-family: "open sans";
+  font-size: large;
+  color: white;
+  padding: 1% 2%;
+  border-radius: 10%;
 }
 
-footer{
-    background-color: #47aac5;
-    text-align: center;
-    color: white;
-    padding: 9%;
-    padding-left:40%;
-    padding-right: 40%;
+footer {
+  background-color: #47aac5;
+  text-align: center;
+  color: white;
+  padding: 9%;
+  padding-left: 40%;
+  padding-right: 40%;
 }
 
-.sezione{
-    padding: 9%;
-   
-    
+.sezione {
+  padding: 9%;
 }
 
-.carta{
-    border: 2px solid rgb(165, 163, 163);
-    margin-bottom: 10%;
-    display: inline-block;
-    vertical-align: top;
-    width: 25vw;
-    margin-right: 1%;
-    height: 500px;
+.carta {
+  border: 2px solid rgb(165, 163, 163);
+  margin-bottom: 10%;
+  display: inline-block;
+  vertical-align: top;
+  width: 25vw;
+  margin-right: 1%;
+  height: 500px;
 }
 
-.par{
-    padding-left: 5%;
-    padding-right: 5%;
+.par {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-#banner{
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
 }
 
-
-#cite{
-    background-color: #f04c2f;
-    color: white;
-    padding: 1%;
+#cite {
+  background-color: #f04c2f;
+  color: white;
+  padding: 1%;
 }
 
-#nome{
-    font-size: larger;
+#nome {
+  font-size: larger;
 }
 
-#notebook{
-    border-radius: 50%;
+#notebook {
+  border-radius: 50%;
 }
 
-#nb{
-    display: inline-block;
-    padding-right: 5%;
+#nb {
+  display: inline-block;
+  padding-right: 5%;
 }
 
-#lato{
-    display: inline-block;
-    text-align: left;
-    padding-left: 5%;
+#lato {
+  display: inline-block;
+  text-align: left;
+  padding-left: 5%;
 }
 
-a{
-    color: white;
+a {
+  color: white;
 }
