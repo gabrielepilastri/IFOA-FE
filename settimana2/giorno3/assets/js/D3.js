@@ -261,4 +261,8 @@ console.log(characters.length)
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
-console.log("il tuo personaggio si chiama " + starWarsCharacters[0].name + ", è alto " + starWarsCharacters[0].height + ", pesa " + starWarsCharacters[0].mass + "kg. i suoi capelli sono di colore " + starWarsCharacters[0].hair_color + ", mentre la sua pelle è " + starWarsCharacters[0].skin_color + " ed i suoi occhi " + starWarsCharacters[0].eye_color + ". è nato il " + starWarsCharacters[0].birth_year + " ed il suo gender è " + starWarsCharacters[0].gender)
+const indice = Math.floor(Math.random() * starWarsCharacters.length);
+
+const elemento = starWarsCharacters[indice];
+
+console.log("il tuo personaggio si chiama " + elemento.name + ", è alto " + elemento.height + "cm, pesa " + elemento.mass + "kg. i suoi capelli sono di colore " + elemento.hair_color + ", mentre la sua pelle è " + elemento.skin_color + " ed i suoi occhi " + elemento.eye_color + ". è nato il " + elemento.birth_year + " ed il suo gender è " + elemento.gender)
