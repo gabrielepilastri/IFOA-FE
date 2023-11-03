@@ -43,7 +43,7 @@ let diff = 19;
 
 function crazyDiff(num1, diff) {
     if (num1 <= 19) {
-        differenza = (num1 - diff)*(-1);
+        differenza = Math.abs(num1 - diff);
         return differenza;
     } else {
         differenza = (num1 - diff) * 3;
@@ -51,7 +51,7 @@ function crazyDiff(num1, diff) {
     }
 }
 
-console.log(crazyDiff(5, diff))
+console.log(crazyDiff(6, diff))
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -126,7 +126,7 @@ let parola2 = "";
 
 function reverseString(invertire) {
    
-    for (let i = invertire.length; i >= 0; i--) {
+    for (let i = invertire.length -1; i >= 0; i--) {
     parola2 += parola1[i]
     }
     return parola2;
@@ -141,17 +141,22 @@ console.log(reverseString(parola1))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let maiuscole = "tutte le prime lettere maiuscole";
+let frase1 = "tutte le prime lettere maiuscole";
 
-function upperFirst(upper) {
-    let divise = maiuscole.split(" ");
-
-    prova = divise[0].toUpperCase() +divise.slice(1)
-
-        return prova
+function upperFirst(stringa) {
+    let arrayFrase = stringa.split(" ");
+    let risultato1= [];
+    for (let i = 0; i < arrayFrase.length; i++) {
+        // let prima = arrayFrase[i].charAt(0);
+        // let parolaTagliata = arrayFrase[i].slice(1);
+        // let parolaFinale = prima.toUpperCase() + parolaTagliata;
+        let parolaFinale = arrayFrase[i].charAt(0).toUpperCase() + arrayFrase[i].substring(1);
+        risultato1.push(parolaFinale);
+    }
+    return risultato1.join(" ");
 }
 
-console.log(upperFirst(maiuscole))
+console.log(upperFirst(frase1))
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -176,3 +181,12 @@ console.log(cutString(frase))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function giveMeRandom(n) {
+    let arrayNumeri = [];
+    for (let i = 0; i < n; i++) {
+        arrayNumeri.push(Math.floor(Math.random() * 11));
+    }
+    return arrayNumeri;
+}
+
+console.log(giveMeRandom(5))
