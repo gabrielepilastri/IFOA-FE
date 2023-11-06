@@ -1,0 +1,121 @@
+/* Your styles here */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+    margin: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-right: 10%;
+    background-color: #E9EDEE;
+}
+
+header{
+    background-color: #222F3F;
+}
+
+#logoTestata{
+    width: 8%;
+    padding: 0.5%;
+    padding-left: 2%;
+}
+
+nav{
+    background-color: #3c4d5f;
+    line-height: 200%;
+}
+
+ul{
+    list-style: none;
+    color: white;
+}
+
+li{
+    display: inline-block;
+    padding-right: 2%;
+
+}
+
+main{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#primaSez{
+    color: white;
+    text-align: center;
+}
+
+article{
+    background-color: white;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+#arancione {
+    background-color: #F56600;
+    line-height: 200%;
+}
+
+#backgroundImage{
+    background-image:url(/amazon\ page/assets/images/bg-image.png);
+    background-size:contain;
+    font-size: x-large;
+}
+
+#arancione, #backgroundImage{
+    margin-top: 2.5%;
+}
+
+.immagine{
+    width: 18vw;
+    height: 45vh;
+    border-radius: 5%;
+}
+
+.scatola{
+    display: inline-block;
+    margin: 1%;
+    box-shadow: rgb(173, 173, 173) 10px 10px 10px;
+    border-radius: 5%;
+}
+
+.blu{
+    color: #217483;
+}
+
+#peso{
+    font-size: larger;
+    font-weight: 600;
+}
+
+#secondaSez{
+    margin-top: 2%;
+}
+
+.descrizione{
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+}
+
+#footer{
+    background-color: #3c4d5f;
+    text-align: center;
+    line-height: 300%;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+footer{
+    background-color:  #222F3F;
+    text-align: center;
+    padding: 5%;
+}
