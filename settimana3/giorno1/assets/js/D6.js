@@ -105,9 +105,17 @@ console.log(lunghezze(stringhe, stringhe.length))
 
 console.log("es.8");
 
-let arrDispari = []
+const dispari = () => {
+  const numeriDispari = [];
+  for (let i = 0; i < 100; i++) {
+    if (i % 2 !== 0) {
+      numeriDispari.push(i);
+    }
+  }
+  return numeriDispari;
+}
 
-
+console.log(dispari())
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -229,13 +237,38 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+const vecchio = (array) => {
+  let esito = {Year: 3000};
+  array.forEach((film) => {
+    let anno = parseInt(film.Year);
+    if (anno < esito.Year) {
+      esito = film;
+    }
+  });
+  return esito;
+}
+
+console.log(vecchio(movies))
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+function contaFilm() {
+  return movies.length;
+}
+
+console.log(contaFilm())
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+const titoli = (array) => {
+  return array.map((el) => el.Title);
+}
+
+console.log(titoli(movies))
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
