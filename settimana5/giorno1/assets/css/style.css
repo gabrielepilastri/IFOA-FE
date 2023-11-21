@@ -290,6 +290,41 @@ footer{
     }
 }
 
+@media print {
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    header{
+        display: none !important;
+    }
+
+    footer{
+        display: none !important;
+    }
+
+    table{
+        border-bottom: none;
+        background-color: none;
+    }
+
+    iframe{
+        display: none;
+    }
+
+    section{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    #centrale{
+        display: none;
+    }
+}
+
 /* IMPOSTAZIONI GENERALI */
 
 /* HEADER */
