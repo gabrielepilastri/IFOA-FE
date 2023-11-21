@@ -215,6 +215,7 @@ footer{
 @media screen and (min-width: 1200px) {
     body{
         max-width: 1500px;
+        margin: auto;
     }
     #logo {
         width: 17%;
