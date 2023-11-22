@@ -273,6 +273,8 @@ footer{
     #sezGrigia{
         width: 80vw;
     }
+
+   
 }
 
 @media screen and (min-width: 1200px) {
@@ -405,6 +407,14 @@ footer{
         border: 4px solid white;
         border-radius: 5px;
         box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+
+    #altri1{
+        z-index: 2;
+    }
+
+    #altri2{
+        z-index: 2;
     }
 }
 
