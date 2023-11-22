@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&family=Roboto+Flex:opsz@8..144&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#logo{
+    width: 50%;
+    
+}
+
+#corpo{
+    background-image:url(../img/sfondo.png)
+}
+
+#scatolone{
+    background-color: white;
+    padding: 2%;
+    box-shadow: 8px 8px 8px gray, -8px -8px 8px  gray;
+}
+
+#testata{
+    background-color: rgb(25, 152, 194);
+    color: white;
+    text-align: center;
+    box-shadow: 8px 8px 8px gray, -8px -8px 8px  gray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h4{
+    color: gray;
+}
+
+.grigio{
+    background-color: rgb(206, 203, 203);
+    border-radius: 20%;
+}
+
+.stacco{
+    margin: 5%;
+    box-shadow: 8px 8px 8px gray, -8px -8px 8px  gray;
+}
+
+.blu{
+    background-color: rgb(69, 105, 194);
+    color: white;
+    
+}
+
+iframe{
+    border-radius: 25px;
+}
+
+.altri{
+    background-color: rgb(214, 213, 213);
+    padding: 2%;
+    margin: 2%;
+    position: relative;
+}
+
+.fa-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: xx-large;
+}
+
+#senza{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+.viola{
+    color: rgb(255, 68, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+tr:nth-child(even){
+    background-color: rgb(211, 210, 210);
+}
+
+button{
+    background-color: rgb(61, 61, 243);
+    color: white;
+}
+
+a{
+    color: rgb(67, 164, 255);
+}
+
+#data{
+    text-align: end;
+}
+
+table{
+    border-collapse: collapse;
+    border-bottom: 3px solid rgb(81, 138, 223);
+}
+
+footer{
+    background-color: rgb(34, 83, 100);
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+#email{
+    border: none;
+    border-bottom: 2px solid black;
+    border-bottom-style: dashed;
+}
+
+#titoloGrigio{
+    background-color: rgb(175, 175, 175);
+    color: rgb(49, 49, 49);
+    text-align: center;
+    line-height: 2em;
+}
+
+#centrale{
+    text-align: center;
+}
+
+.floating {
+    float: left;
+    border: 4px solid purple;
+    margin-right: 15px;
+}
+
+
+#ao{
+    color: black;
+    font-size: 5em;
+}
+
+.abs{
+    position: relative;
+    display: inline-block;
+}
+
+.underline{
+    position: absolute;
+    bottom: -0.8em;
+    left: 0;
+    width: 100%;
+    opacity: 70%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    #titolo {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    header{
+        padding-top: 3%;
+    }
+
+    p, li, a {
+        font-size: large;
+    }
+
+    #titolino{
+        font-size: larger;
+    }
+
+    table{
+        width: 75vw;
+    }
+
+    #email, button{
+        line-height: 2em;
+    }
+
+    #centrale{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #titolo {
+        font-size: 3.5em;
+        line-height: 1.2em;
+    }
+
+    header {
+        padding-top: 3%;
+    }
+
+    #logo {
+        width: 30%;
+    }
+
+    p, li, a, h4 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+
+    table {
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        width: 65vw;
+    }
+
+    #email, button {
+        line-height: 3em;
+    }
+
+    #email {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    #centrale {
+        font-size: 2.5em;
+    }
+
+    .altri p {
+        font-size:large;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    #titoloGrigio {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        max-width: 1200px;
+        margin: auto;
+    }
+    #logo {
+        width: 17%;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+    #titolo {
+        font-size: 3.5em;
+        line-height: 0em;
+    }
+
+    table {
+        margin: auto;
+        width: 40vw;
+        text-align: center;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    
+    #unisci{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    iframe{
+        width: 130%;
+    }
+
+    section{
+        width: 40vw;
+        border-radius: 25px;
+    }
+
+    #email {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    #sezGrigia{
+        position: relative;
+        width: 40%;
+    }
+
+    #titoloGrigio{
+        margin-top: 5px;
+        padding: 5px 10px;
+        position: absolute;
+        top: -20px;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    #email, button{
+        line-height: 3em;
+    }
+
+    #centrale {
+        font-size: xx-large;
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    aside p{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0;
+    }
+
+   
+    
+}
+
+@media screen and (min-width: 700px) {
+    #frecciaViola{
+        padding: 8px;
+        color: purple;
+        border: 3px solid purple;
+        border-radius: 5px;
+    }
+
+    #tornaSu{
+        position: fixed;
+        padding: 4px;
+        background-color: rgba(255, 255, 255, 0.884);
+        border: 4px solid white;
+        border-radius: 5px;
+        right: 0;
+        bottom: 20px;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+
+    #piu{
+        color: blue;
+        padding: 8px;
+        font-size: x-large;
+    }
+
+    #altri1{
+        position: fixed;
+        right: 0;
+        top: 4%;
+        background-color: rgba(255, 255, 255, 0.829);
+        padding: 4px;
+        border: 4px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+
+    #calen{
+        color: blue;
+        padding: 8px;
+        font-size: x-large;
+    }
+
+    #altri2{
+        position: fixed;
+        right: 0;
+        top: 11%;
+        background-color: rgba(255, 255, 255, 0.829);
+        padding: 4px;
+        border: 4px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    #frecciaViola{
+        padding: 8px;
+        color: purple;
+        border: 3px solid purple;
+        border-radius: 5px;
+    }
+
+    #tornaSu{
+        position: fixed;
+        padding: 4px;
+        background-color: rgba(255, 255, 255, 0.884);
+        border: 4px solid white;
+        border-radius: 5px;
+        right: 0;
+        bottom: 1%;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+
+    #piu{
+        color: blue;
+        padding: 8px;
+        font-size: x-large;
+    }
+
+    #altri1{
+        position: fixed;
+        right: 0;
+        bottom: 8%;
+        background-color: rgba(255, 255, 255, 0.829);
+        padding: 4px;
+        border: 4px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+
+    #calen{
+        color: blue;
+        padding: 8px;
+        font-size: x-large;
+    }
+
+    #altri2{
+        position: fixed;
+        right: 0;
+        bottom: 15%;
+        background-color: rgba(255, 255, 255, 0.829);
+        padding: 4px;
+        border: 4px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 6px 6px rgba(128, 128, 128, 0.726), -5px -6px 5px rgba(128, 128, 128, 0.753);
+    }
+}
+
+@media print {
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    header{
+        display: none !important;
+    }
+
+    footer{
+        display: none !important;
+    }
+
+    table{
+        border-bottom: none;
+        background-color: none;
+    }
+
+    iframe{
+        display: none;
+    }
+
+    section{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    #centrale{
+        display: none;
+    }
+    
+}
+
+/* IMPOSTAZIONI GENERALI */
+
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
