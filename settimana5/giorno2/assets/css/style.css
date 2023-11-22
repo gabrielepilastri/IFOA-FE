@@ -157,6 +157,18 @@ footer{
     opacity: 70%;
 }
 
+#sezGrigia{
+    position: relative;
+    width: 40%;
+}
+
+#titoloGrigio{
+    margin-top: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: -20px;
+}
+
 
 
 
@@ -192,6 +204,10 @@ footer{
 
     #centrale{
         font-size: 2.5em;
+    }
+
+    #sezGrigia{
+        width: 80vw;
     }
 }
 
@@ -253,6 +269,10 @@ footer{
     #titoloGrigio {
         margin-top: 10px;
     }
+
+    #sezGrigia{
+        width: 80vw;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -305,17 +325,7 @@ footer{
         margin-bottom: 15px;
     }
 
-    #sezGrigia{
-        position: relative;
-        width: 40%;
-    }
-
-    #titoloGrigio{
-        margin-top: 5px;
-        padding: 5px 10px;
-        position: absolute;
-        top: -20px;
-    }
+  
 
     button {
         width: 20%;
