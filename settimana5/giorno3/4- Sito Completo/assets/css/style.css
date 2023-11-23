@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #612406;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+b{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin: 2%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FBF7E3;
+    width: 100%;
+    padding: 3%;
+}
+
+nav div{
+    background-color: #F3DF85;
+    border-radius: 50px;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.shop{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    height: 90px;
+}
+
+.shop img{
+    width: 35%;
+    height: 60%;
+}
+
+.esterno{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #FBF7E3;
+    border-radius: 75px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 75px 75px 0 0;
+    object-fit: cover;
+    height: 300px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 8%;
+    
+}
+
+
+.info{
+    
+    margin: 0;
+}
+
+.title, .info{
+    flex-direction: column;
+    margin: 0;
+    font-size: large;
+}
+
+.price{
+    align-self: flex-end;
+    font-size: larger;
+}
+
+.button{
+    text-align: center;
+}
+
+button{
+    background-color: #F3DF85;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 60%;
+    font-size: larger;
+    
+}
+
+
+
+.article{
+    background-color: #FBF7E3;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 2%;
+    border-radius: 25px;
+    
+    margin: 2%;
+}
+
+.article img{
+    margin-right: 30px;
+   flex: 1 1 600px;
+   min-width: 600px;
+   
+}
+
+.description{
+    
+    flex: 1 1 500px;
+}
