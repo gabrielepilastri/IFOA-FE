@@ -5,7 +5,7 @@ window.addEventListener("scroll", function(event) {
     let mainHeight = main.offsetHeight
 
 
-    if (window.pageYOffset >= mainHeight - 80) { /* 80 is to make the change happen a little early on before the end of the hero section, no particular other reason why it's there (just like the original one) */
+    if (window.pageYOffset >= mainHeight - 80) {
         console.log("scrolled")
         header.classList.add("scrolled")
     }
