@@ -85,7 +85,6 @@ nav div{
 
 .description{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     padding-top: 8%;
     
@@ -138,10 +137,135 @@ button{
     margin-right: 30px;
    flex: 1 1 600px;
    min-width: 600px;
+   overflow: hidden;
+   object-fit: cover;
    
 }
 
-.description{
+.description1{
     
     flex: 1 1 500px;
 }
+
+.quinta{
+    display: none;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:633px) {
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        position: absolute;
+        width: 100%;
+    }
+    .article img{
+        min-width: 100%;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1499px) {
+    .quarta{
+        display: flex;
+    }
+    
+    .main{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+
+    
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 1500px) and (max-width: 2051px) {
+    .quarta{
+        display: none;
+    }
+}
+
+/* LARGE */
+
+@media screen and (min-width: 2052) and (max-width: 2694px) {
+    .quinta{
+        display: none;
+    }
+}
+
+/* XLARGE */
+
+@media screen and (min-width: 2695px) {
+    .quinta{
+        display: flex;
+    }
+}
+
+/* SIDEBAR */
+
+@media screen and (min-width: 1025px) {
+
+    h2{
+        font-size: 4.5em;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3{
+        font-weight: bolder;
+        font-size: 3em;
+    }
+
+    p{
+        font-size: xx-large;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 5vw;
+        min-width: 120px;
+        position: fixed;
+        left: 0;
+        height: 90vh;
+        justify-content: flex-start;
+    }
+
+    nav div{
+        width: 8vw;
+        min-width: 120px;
+        height: 8vh;
+        margin-bottom: 2vh;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 75px;
+    }
+
+    .shop{
+        width: 8vw;
+        height: 8vh;
+        order: -1;
+        justify-content: space-around;
+    }
+
+    .shop img{
+        width: 3vw;
+    }
+
+    .esterno{
+        margin-left: 12vw;
+    }
+
+    .card{
+        width: 390px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    
+

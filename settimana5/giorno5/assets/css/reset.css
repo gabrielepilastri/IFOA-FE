@@ -1,0 +1,305 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+
+
+body{
+    color: #191919;
+}  
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+    height: 5em;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+
+}
+
+header img {
+    width: 12em;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #191919ab;
+}
+
+header ul li{
+    padding-left: 2em;
+}
+
+header button{
+    background-color: #191919;
+    color: white;
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 30px;
+  
+}
+
+
+main{
+    padding-top: 5em;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftHead{
+    width: 50vw;
+    padding-left: 10vw;
+    padding-top: 4em;
+}
+
+header.scrolled {
+    background-color: white;
+    transition: 0.5s;
+}
+
+header.scrolled button{
+    background-color: #1a8917;
+    transition: 0.5s;
+}
+
+#leftHead h1{
+    font-size: 7em;
+    padding-bottom: 4%;
+}
+
+#leftHead p{
+    font-size: 1.8em;
+    padding-bottom: 7%;
+}
+
+#leftHead button{
+    background-color: #191919;
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 30px;
+    padding: 0.4em 2.6em;
+    margin-bottom: 3em;
+}
+
+
+#trending svg{
+    border: 1px solid #a3a3a3;
+    border-radius: 25px;
+    padding: 3px;
+    margin-right: 1em;
+}
+
+#trending{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10vw;
+    margin-top: 3em;
+}
+
+#main2{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10vw;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid lightgray;
+}
+
+article{
+    display: flex;
+    width: 25vw;
+    margin-top: 1em;
+    font-size: large;
+    font-weight: bolder;
+}
+
+article img{
+    width: 25px;
+    height: 25px;
+}
+
+.numberArticle{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 0.7em;
+    color: rgba(128, 128, 128, 0.356);
+}
+
+.infoArticle{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.timeArticle{
+    color: rgb(165, 165, 165);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: small;
+}
+
+b{
+    font-weight: bold;
+}
+
+.tonda{
+    border-radius: 50%;
+}
+
+.radius{
+    border-radius: 10px;
+}
+
+#leftMain3{
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10vw;
+    max-width: 60vw;
+}
+
+#main3{
+    display: flex;
+    padding-top: 3em;
+}
+
+.articleMain3{
+    display: flex;
+    align-items: center;
+}
+
+.descriptionMain3{
+    font-size: small;
+    color: #a3a3a3;
+    margin-top: 8px;
+}
+
+.tagMain3{
+    background-color: rgba(211, 211, 211, 0.39);
+    padding: 0.5em;
+    border-radius: 25px;
+}
+
+#separaBookmark{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imageMain3{
+    width: 9vw;
+    margin-left: 3em;
+}
+
+.article3{
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+#rightMain3{
+    margin-left: 6vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    position: sticky;
+    top: 110px;
+}
+
+#rightMain3 small{
+    font-weight: bold;
+}
+
+#tags3{
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20vw;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.5em;
+}
+
+.tagsMain3{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    height: 2.5em;
+    padding: 0 1em;
+    margin: 5px 10px;
+}
+
+#rightMain3 ul{
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    color: gray;
+    list-style: none;
+    
+}
+
+#footer{
+    width: 23vw;
+}
+
+#rightMain3 ul li{
+    margin-right: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}

@@ -19,6 +19,8 @@ img{
     margin-right: 30px;
    flex: 1 1 600px;
    min-width: 600px;
+   overflow: hidden;
+   object-fit: cover;
    
 }
 
