@@ -259,8 +259,6 @@ b{
     margin-left: 6vw;
     font-family: 'Roboto', sans-serif;
     font-size: small;
-    position: sticky;
-    top: 110px;
 }
 
 #rightMain3 small{
@@ -302,4 +300,24 @@ b{
     margin-right: 2em;
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    #main2 article{
+        min-width: 40vw;
+    }
+
+    #main3{
+        flex-direction: column-reverse;
+    }
+
+    #rightMain3{
+        min-width: 50vw;
+    }
+
+    #tags3{
+        flex-direction: row;
+    }
+
+    
 }
