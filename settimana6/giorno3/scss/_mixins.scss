@@ -1,0 +1,13 @@
+@mixin mixinBtn {
+    background-color: $color1;
+    color: $color2;
+    border: 2px solid $color2;
+    border-radius: 10px;
+}
+
+@mixin mixinBtnHover{
+    cursor: pointer;
+    background-color: $color2;
+    color: $color1;
+    border-color: $color1;
+}

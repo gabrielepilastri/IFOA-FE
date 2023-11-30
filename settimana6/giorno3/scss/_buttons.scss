@@ -1,0 +1,7 @@
+button {
+    @include mixinBtn;
+}
+
+button:hover{
+    @include mixinBtnHover
+}
