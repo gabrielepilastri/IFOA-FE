@@ -1,7 +1,6 @@
 $padding-default: 20px;
 $margin-default: 0 auto;
 
-
 $sizes: (
     sm: 12px,
     normal: 16px,
@@ -23,9 +22,34 @@ $sizes: (
     }
 }
 
+
 @include create-padding();
 @include create-padding(top);
+@include create-padding(bottom);
 @include create-padding(left);
 @include create-padding(right);
-@include create-padding(bottom);
 @include create-padding(block);
+@include create-padding(inline);
+
+
+
+@mixin create-margin($direction: null) {
+    @each $key, $value in $sizes {
+        .margin-#{$direction}-#{$key} { 
+            @if $direction {
+                margin-#{$direction}: $value;
+            } @else {
+                margin: $value;
+            }
+        }
+    }
+}
+
+
+@include create-margin();
+@include create-margin(top);
+@include create-margin(left);
+@include create-margin(bottom);
+@include create-margin(right);
+@include create-margin(block);
+@include create-margin(inline);
