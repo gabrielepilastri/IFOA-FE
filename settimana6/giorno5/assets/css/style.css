@@ -1,0 +1,38 @@
+ul {
+    font-size: xx-small;
+}
+
+.spannino {
+    font-size: 0.5rem;
+}
+
+.lista {
+    font-size: small;
+}
+
+.listina {
+    font-size: 0.4rem;
+}
+
+.bottoneSmall {
+    font-size: xx-small;
+}
+
+.piccolo  {
+    font-size: 0.5em;
+}
+
+.divvino {
+    font-size: 0.5rem;
+    line-height: 0.5em;
+}
+
+.divvetto{
+    font-size: 0.5em;
+    line-height: 0.9em;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
