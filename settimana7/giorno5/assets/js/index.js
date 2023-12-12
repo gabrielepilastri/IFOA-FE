@@ -21,7 +21,7 @@ function populate() {
                         <div>
                             <h5 class="card-title">${el.name}</h5>
                             <p class="card-text">${el.description}</p>
-                            <a onclick="editPage('${el._id}')" class="btn btn-warning border border-dark me-2 mb-1 px-4">Edit</a>
+                            <a onclick="populateForm('${el}')" class="btn btn-warning border border-dark me-2 mb-1 px-4">Edit</a>
                             <a onclick="#" class="btn btn-primary border text-light border-light" onclick="miPage('${el._id}')">More Info</a>
                         </div>
                         <div>
@@ -38,7 +38,7 @@ function populate() {
 
 function editPage(productId) {
     console.log(productId);
-    window.location.href = "../edit.html?id=${productId}";
+
     fetch(`${myUrl}${productId}`, { 
         headers: { "Content-Type": "application/json", Authorization: headers.Authorization,
     "Accept": "application/json" } })
@@ -59,7 +59,9 @@ function editPage(productId) {
 
 
 
-
+function populateForm() {
+    window.location.href = "../edit.html";
+}
 
    
 
