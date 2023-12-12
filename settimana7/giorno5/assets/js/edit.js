@@ -17,10 +17,17 @@ function populateForm() {
             console.log(el._id);
             populateEditPage(el.name, el.brand, el.price, el.imageUrl, el.description);
         })});
-    
+    function populateEditPage(editName, editBrand, editPrice, editImage, editDescription) {
+        document.getElementById("editName").value = editName;
+        document.getElementById("editBrand").value = editBrand;
+        document.getElementById("editPrice").value = editPrice;
+        document.getElementById("editImage").value = editImage;
+        document.getElementById("editDescription").value = editDescription;
 }
-
+}
 populateForm();
+
+
 
 
 
@@ -108,36 +115,36 @@ populateForm();
 
 
 
-async function editCard() {
-    let editName = document.getElementById("editName").value;
-    let editBrand = document.getElementById("editBrand").value;
-    let editPrice = document.getElementById("editPrice").value;
-    let editImage = document.getElementById("editImage").value;
-    let editDescription = document.getElementById("editDescription").value;
+// async function editCard() {
+//     let editName = document.getElementById("editName").value;
+//     let editBrand = document.getElementById("editBrand").value;
+//     let editPrice = document.getElementById("editPrice").value;
+//     let editImage = document.getElementById("editImage").value;
+//     let editDescription = document.getElementById("editDescription").value;
 
-    try {
-        let response = await fetch(myUrl, {
-            method: 'PUT',
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: headers.Authorization,
-            },
-            body: JSON.stringify({
-                "name": `${editName}`,
-                "brand": `${editBrand}`,
-                "price": `${editPrice}`,
-                "imageUrl": `${editImage}`,
-                "description": `${editDescription}`,
-            }),
-        });
-        let data = await response.json();
-        console.log(data);
+//     try {
+//         let response = await fetch(myUrl, {
+//             method: 'PUT',
+//             headers: {
+//                 "Content-Type": "application/json",
+//                 Authorization: headers.Authorization,
+//             },
+//             body: JSON.stringify({
+//                 "name": `${editName}`,
+//                 "brand": `${editBrand}`,
+//                 "price": `${editPrice}`,
+//                 "imageUrl": `${editImage}`,
+//                 "description": `${editDescription}`,
+//             }),
+//         });
+//         let data = await response.json();
+//         console.log(data);
 
-         window.location.href = "../index.html";
-    }   catch (error) {
-        console.error(error);
-    }
-}
+//          window.location.href = "../index.html";
+//     }   catch (error) {
+//         console.error(error);
+//     }
+// }
 
 
 
