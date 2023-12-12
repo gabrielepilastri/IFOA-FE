@@ -1,28 +1,103 @@
 const myUrl = "https://striveschool-api.herokuapp.com/api/product/";
 const headers = {
     "Content-Type": "application/json",
-    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTc4MmIwZWMwNTgzNTAwMTg1MjJkNDgiLCJpYXQiOjE3MDIzNzQxNTgsImV4cCI6MTcwMzU4Mzc1OH0.7B3gcFcKWz0LZxh4amP-BKaZQ3kviJ7wQ6STRqlePCs"
+    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTc4MmIwZWMwNTgzNTAwMTg1MjJkNDgiLCJpYXQiOjE3MDIzNzQxNTgsImV4cCI6MTcwMzU4Mzc1OH0.7B3gcFcKWz0LZxh4amP-BKaZQ3kviJ7wQ6STRqlePCs",
+
 };
 
 // Ottenere l'ID del prodotto dalla query string dell'URL
-const urlParams = new URLSearchParams(myUrl);
-const productId = urlParams.get('id');
-console.log(productId);
 
 
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    
-    fetch(`${myUrl}``${productId}`, { headers: headers })
-    .then (response => response.json())
+function populateForm() {
+    fetch(myUrl, {headers})
+    .then((response) => response.json())
     .then((data) => {
-        console.log(data._id);
-    })
+        data.forEach((el) => {
+            console.log(el._id);
+            populateEditPage(el.name, el.brand, el.price, el.imageUrl, el.description);
+        })});
     
-});
+}
+
+populateForm();
+
+
+
+
+
+
+// async function createObject() {
+//     try {
+//         let response = await fetch(myUrl, {
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Authorization': headers.Authorization
+//             },
+           
+//         })
+        
+        
+
+//         if (!response.ok) {
+//             throw new Error('Errore durante la creazione dell\'oggetto');
+//         }
+
+//         // Estrai l'ID dall'API
+//         const responseObject = await response.json();
+//         const objectId = responseObject._id;
+//         console.log(objectId);
+
+//         // Esegui una nuova richiesta GET per ottenere i dettagli completi dell'oggetto
+//         const detailsResponse = await fetch(`${myUrl}${objectId}`, {
+//             headers: {
+//                 'Authorization': headers.Authorization
+//             }
+//         });
+        
+
+//         if (!detailsResponse.ok) {
+//             throw new Error('Errore durante il recupero dei dettagli dell\'oggetto');
+//         }
+
+//         // Estrai i dettagli completi dell'oggetto
+//         const objectDetails = await detailsResponse.json();
+
+//         // Ora puoi utilizzare objectDetails per popolare il tuo form HTML
+//         populateForm(objectDetails);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// // Funzione per popolare il form HTML con i dettagli dell'oggetto
+// function populateForm(objectDetails) {
+//     // Usa objectDetails per popolare il form
+//     document.getElementById('editName').value = objectDetails.name;
+//     document.getElementById('editInput').value = objectDetails.description;
+//     document.getElementById('editBrand').value = objectDetails.brand;
+//     document.getElementById('editPrice').value = objectDetails.price;
+//     document.getElementById('editImage').value = objectDetails.imageUrl;
+// }
+
+// // Chiamare la funzione per creare l'oggetto e popolare il form
+// createObject();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

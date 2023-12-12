@@ -15,14 +15,14 @@ function populate() {
         data.forEach((el) => {
             console.log(el._id);
             card.innerHTML += `<div class="col">
-                <div class="card">
+                <div class="card border border-success bg-dark text-light p-2 mt-3">
                     <img src="${el.imageUrl}" class="card-img-top" alt="..."/>
                     <div class="card-body d-flex justify-content-around">
                         <div>
                             <h5 class="card-title">${el.name}</h5>
                             <p class="card-text">${el.description}</p>
-                            <a onclick="editPage('${el._id}')" class="btn btn-warning me-2 mb-1 px-4">Edit</a>
-                            <a onclick="#" class="btn btn-info" href="detail.html?id=${el._id}">More Info</a>
+                            <a onclick="editPage('${el._id}')" class="btn btn-warning border border-dark me-2 mb-1 px-4">Edit</a>
+                            <a onclick="#" class="btn btn-primary border text-light border-light" onclick="miPage('${el._id}')">More Info</a>
                         </div>
                         <div>
                             <h4 class="text-success">Price: ${el.price}</h4>

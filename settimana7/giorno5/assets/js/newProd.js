@@ -48,3 +48,6 @@ function resetForm() {
     document.getElementById("newImage").value = "";
     document.getElementById("newDescription").value = "";
 }
+
+
+
