@@ -10,7 +10,6 @@ function App() {
     <div>
     <MyNav />
      <Welcome />
-    
      <AllTheBooks />
      <Footer />
     </div>
