@@ -35,7 +35,7 @@ const AllTheButtons = ({setList}) => {
             {genres.map((genre, index) => {
                     return (
                         
-                            <Button className='mx-2w' variant='outline-success' onClick={() => setList(genre.data)} key={index}>
+                            <Button className='mx-2' variant='warning' onClick={() => setList(genre.data)} key={index}>
                             {genre.type}
                         </Button>
                         

@@ -1,17 +1,17 @@
-import { Card, Col, Row, Button } from 'react-bootstrap'
 import { useState, useEffect } from 'react';
 import AllTheButtons from './AllTheButtons';
+import SingleBook from './SingleBook';
 
 
 
 
 
 
-const AllTheBooks = () => {
-    const [list, setList] = useState([])
+const AllTheBooks = ({retrieveTitle}) => {
+    const [list, setList] = useState([]);
     const [search, setSearch] = useState([]);
-    const [clicked, setClicked] = useState(false);
-     
+    
+
     function searchBar(event) {
       let value = new RegExp(event.target.value, 'i')
       const actualState = list
@@ -23,39 +23,24 @@ const AllTheBooks = () => {
 
     useEffect(() => {
       setSearch(list)
+      retrieveTitle(list[0] ? "Categoria " + list[0].category : "Categorie Epiche")
   }, [list])
 
 
     return (
       <>
-      <input type="text" onChange={searchBar} />
       <AllTheButtons setList={setList}/>
-      <Row>
-          <Col className='d-flex flex-wrap text-center justify-content-center'>
-            
-              {search.map((book, asin) => 
-              <Card className='col-2 mx-2 my-2' onClick={() => setClicked(!clicked)} key={book.asin}>
-              <Card.Img variant="top" src={book.img} />
-              <Card.Body>
-                <Card.Title>
-                  {book.title}
-                </Card.Title>
-                <Button variant='warning'>Acquista {book.price}$</Button>
-                
-              </Card.Body>
-            </Card>
-              )}
-              {clicked ? Card.className = "border-danger" && console.log("cliccata") : Card.className = ""}
-              
-          </Col>
-      </Row>
+      <div className="text-left my-3">
+            <span>Cerca: </span>
+            <input type="text" onChange={searchBar}/>
+        </div>
+      <div className='d-flex justify-content-between flex-wrap'>
+        {search.map((book) => 
+        <SingleBook book={book} key={book.asin} />
+        )}
+      </div>
       </>
      )
-
-
-   
-
-  
 }
 
 
