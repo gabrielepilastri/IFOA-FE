@@ -13,6 +13,8 @@ const Home = ({search}) => {
     const [city, setCity] = useState([]);
     const [city2, setCity2] = useState(null);
 
+
+
     const fetchData = async() => {
         try {
             const res = await fetch(url);
@@ -59,12 +61,21 @@ const Home = ({search}) => {
     
             useEffect(() => {
                 console.log(city2)
-            },[city])
+            },[city2])
     
             useEffect(() => {
                 if(search.length > 2)
                 fetchTomorrow()
             }, [search])
+
+            let minimo = 100;
+            let massimo = -100;
+        
+            for (let i = 0; i<city2.list.length; i++) {
+                if (i < minimo) {
+                    minimo = i;
+                }
+            }
 
 
     return (
@@ -106,6 +117,7 @@ const Home = ({search}) => {
 
                             <div className='center'>
                             <Card.Title className='card-title'>Temperature</Card.Title>
+                            <Card.Text>min: {minimo} <br />max:</Card.Text>
                             <Card.Text className='card-text'>{city?.main?.temp.toFixed()} °C</Card.Text>
                             </div>
                         </div>
