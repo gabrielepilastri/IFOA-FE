@@ -24,6 +24,7 @@ body{
 
 .single-card img {
     margin-left: 1em; 
+    margin-right: 1em;
 }
 
 .cards{
@@ -37,7 +38,10 @@ body{
 }
 
 .center{
-    padding-left: 3em;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
 }
 
 .card-title{
