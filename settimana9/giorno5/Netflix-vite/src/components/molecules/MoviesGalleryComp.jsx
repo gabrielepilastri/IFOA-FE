@@ -52,8 +52,8 @@ useEffect(() => {fetchData()}, [])
               key={movie.imdbID}
               src={movie.Poster}
               alt={movie.Title}
-              width={250}
-              height={140}
+              width={140}
+              height={230}
             />
           ))}
         </Carousel.Item>
@@ -64,8 +64,8 @@ useEffect(() => {fetchData()}, [])
               key={movie.imdbID}
               src={movie.Poster}
               alt={movie.Title}
-              width={250}
-              height={140}
+              width={140}
+              height={230}
             />
           ))}
         </Carousel.Item>
